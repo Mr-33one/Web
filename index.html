@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mizuki portfolio</title>
     <meta name="description" content="藤森 瑞希のポートフォリオサイトです。これまでに作った作品を掲載していますので、よろしければ是非ご覧になってください。">
     <link rel="icon" href="img/log.png">
     <link rel="apple-touch-icon" href="img/log.png">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.0/dist/lenis.min.js"></script>
 </head>
 <body>
     <header class="header__container">
@@ -18,19 +19,19 @@
             </div>
             <ul class="nav__content">
                 <li class="nav__item left">
-                    <a class="item__text item__left" href="#">こんなお悩みを解決します</a>
+                    <a class="item__text item__left" href="#worries">こんなお悩みを解決します</a>
                 </li>
                 <li class="nav__item right">
-                    <a class="item__text item__right" href="">スキル</a>
-                    <a class="item__text item__right" href="">制作実績</a>
-                    <a class="item__text item__right" href="">サービス内容</a>
-                    <a class="item__text item__right" href="">お問い合わせ</a>
+                    <a class="item__text item__right" href="#skill">スキル</a>
+                    <a class="item__text item__right" href="#production">制作実績</a>
+                    <a class="item__text item__right" href="#service">サービス内容</a>
+                    <a class="item__text item__right" href="#contact">お問い合わせ</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero__container">
+        <section id="hero" class="hero__container">
             <h1 class="hero__h1">その想いを、伝わるデザインに。</h1>
             <div class="hero__detail">
                 <p class="text__1">
@@ -44,24 +45,32 @@
                 </p>
             </div>
         </section>
-        <section class="worries__container wrapper">
+        <section id="worries" class="worries__container wrapper">
             <h2 class="worries__title section__title">こんなお悩みを解決します</h2>
             <div class="worries__list">
-                <div class="list__item">
-                    <img src="/img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                <div class="list__item img1">
+                    <a class="list__content " href="">
+                        <span class="list__text">Webサイトを制作したいけど<br>方法がわからない</span>
+                    </a>
                 </div>
-                <div class="list__item">
-                    <img src="/img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                <div class="list__item img2">
+                    <a class="list__content " href="">
+                        <span class="list__text">Webサイトの運用方法が<br>わからない</span>
+                    </a>
                 </div>
-                <div class="list__item">
-                    <img src="/img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                <div class="list__item img3">
+                    <a class="list__content " href="">
+                        <span class="list__text">SNSを発信したいけど、<br>やり方がわからない</span>
+                    </a>
                 </div>
-                <div class="list__item">
-                    <img src="/img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                <div class="list__item img4">
+                    <a class="list__content " href="">
+                        <span class="list__text">動画編集を依頼したいけど<br>依頼先が見つからない</span>
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="skill__container wrapper">
+        <section id="skill" class="skill__container wrapper">
             <h2 class="skill__title section__title">
                 <span class="ja">スキル</span>
                 <span class="en">Skills</span>
@@ -72,38 +81,38 @@
                         <span>私は、動画編集・Webデザイン・SNS運用の3つを軸に、<br>「伝わる」「広がる」コンテンツ作りを得意としています。</span>
                     </p>
                     <p class="left__item">
-                        <span>動画編集</span>
-                        <span>Vlogや紹介動画など、ストーリー性とテンポ感を意識した映像制作が可能です。<br>Premiere ProやCapCutを使用し、視聴者の興味を惹きつける構成・演出を心がけています。</span>
+                        <span class="item__title">Webデザイン</span>
+                        <span class="item__content">シンプルで見やすく、かつ印象に残る出会いんを大切にしています。<br>HTML/CSS/JavaScriptの基本を押さえ、LPやポートフォリオなど幅広く対応可能です。</span>
                     </p>
                     <p class="left__item">
-                        <span>Webデザイン</span>
-                        <span>シンプルで見やすく、かつ印象に残る出会いんを大切にしています。<br>HTML/CSS/JavaScriptの基本を押さえ、LPやポートフォリオなど幅広く対応可能です。</span>
+                        <span class="item__title">動画編集</span>
+                        <span class="item__content">Vlogや紹介動画など、ストーリー性とテンポ感を意識した映像制作が可能です。<br>Premiere ProやCapCutを使用し、視聴者の興味を惹きつける構成・演出を心がけています。</span>
                     </p>
                     <p class="left__item">
-                        <span>SNS運用・マーケティング</span>
-                        <span>TikTokやInstagramなど、最新のトレンドを踏まえた運用ができます。<br>分析と改善と繰り返し、ユーザーに「刺さる」コンテンツ作りやアカウント設計を行います。</span>
+                        <span class="item__title">SNS運用・マーケティング</span>
+                        <span class="item__content">TikTokやInstagramなど、最新のトレンドを踏まえた運用ができます。<br>分析と改善と繰り返し、ユーザーに「刺さる」コンテンツ作りやアカウント設計を行います。</span>
                     </p>
                     <p class="left__item">
                         <span>これらのスキルを活かし、<br>「伝えたい想いをカタチにする」お手伝いをします。</span>
                     </p>
                 </div>
                 <div class="skill__right">
-                    <div class="right__item">
-                        <img src="img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                    <div class="right__item img1">
+                        <span>Webサイトデザイン</span>
                     </div>
-                    <div class="right__item">
-                        <img src="img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                    <div class="right__item img2">
+                        <span>動画編集</span>
                     </div>
-                    <div class="right__item">
-                        <img src="img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                    <div class="right__item img3">
+                        <span>SNS運用</span>
+                        <span>マーケティング</span>
                     </div>
-                    <div class="right__item">
-                        <img src="img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                    <div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="production__container">
+        <section id="production" class="production__container">
             <h2 class="production__title section__title">
                 <span class="ja">制作実績</span>
                 <span class="en">Production Results</span>
@@ -143,21 +152,21 @@
                 </div>
             </div>
         </section>
-        <section class="service__container wrapper">
+        <section id="service" class="service__container wrapper">
             <h2 class="service__title section__title">
                 <span class="ja">サービス内容</span>
                 <span class="en">Service</span>
             </h2>
             <div class="service__wrapper">
-                <div class="service__item">
-                    <img src="img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                <div class="service__item img1">
+                    <span>サイト制作/動画制作</span>
                 </div>
-                <div class="service__item">
-                    <img src="img/Firefly_白基調 薄いクリーム色が太い波線がちりばめられている 793793.jpg" alt="">
+                <div class="service__item img2">
+                    <span>SNS運用/マーケティング</span>
                 </div>
             </div>
         </section>
-        <section class="contact__container">
+        <section id="contact" class="contact__container">
             <div class="contact__wrapper">
                 <h2 class="contact__title section__title">
                     <span class="ja">お問い合わせ・無料相談</span>
@@ -172,8 +181,8 @@
     <footer class="footer__container">
         <div class="footer__content">
             <div class="footer__nav">
-                <div class="fotter__log">
-                    <img src="img/log.png" alt="">
+                <div class="footer__log">
+                    <img src="img/log.w.png" alt="">
                 </div>
                 <div class="footer__nav--wrapper">
                     <ul class="footer__nav--item">
@@ -183,11 +192,18 @@
                     </ul>
                     <ul class="footer__nav--item">
                         <li class="footer--navtitle">一覧</li>
-                        <li>自己紹介</li>
-                        <li>スキル</li>
-                        <li>制作実績</li>
-                        <li>サービス内容</li>
-                        <li>お問い合わせ</li>
+                        <li>
+                            <a href="#skill">スキル</a>
+                        </li>
+                        <li>
+                            <a href="#production">制作実績</a>
+                        </li>
+                        <li>
+                            <a href="#service">サービス内容</a>
+                        </li>
+                        <li>
+                            <a href="#contact">お問い合わせ</a>
+                        </li>
                     </ul>
                 </div>
             </div>
