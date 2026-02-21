@@ -114,15 +114,15 @@ section {
     margin-bottom: 120px;
 }
 .hero__container .hero__h1 {
-    font-size: 85px;
+    font-size: clamp(36px, 7vw, 85px);
     text-align: center;
     color: var(--accent);
 }
 .hero__container .hero__detail {
-    font-size: 23px;
+    font-size: clamp(16px, 2.5vw, 23px);
     text-align: start;
     width: 100%;
-    max-width: 60%;
+    max-width: 1068px;
     margin-inline: auto;
     line-height: 1.9;
 }
@@ -382,4 +382,90 @@ section {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer__container {
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .skill__wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .skill__left,
+    .skill__right {
+        width: 100%;
+    }
+    .skill__right .right__item {
+        height: clamp(153px, 2.06vw + 146.4px, 180px);
+    }
+    .skill__right .right__item.img1 {
+        background: url(../img/デザインする男性.png) no-repeat calc(100% - 20px) calc(100% - 10px) / contain;
+        background-size: 30%;
+    }
+    .skill__right .right__item.img2 {
+        background: url(../img/動画編集男性2.png) no-repeat calc(100% - 20px) calc(100% - 10px) / contain;
+        background-size: 30%;
+    }
+    .skill__right .right__item.img3 {
+        background: url(../img/マーケティング.png) no-repeat calc(100% - 20px) calc(100% - 10px) / contain;
+        background-size: 30%;
+    }
+}
+@media screen and (max-width: 959px) {
+    .footer__container .footer__nav {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .service__container .service__wrapper {
+        flex-direction: column;
+    }
+    .service__container .service__wrapper .service__item {
+        width: 100%;
+    }
+    .nav__wrapper .nav__content {
+        display: none;
+    }
+    .nav__wrapper .nav__icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .worries__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 860px) {
+    .hero__container .hero__h1 {
+        font-size: clamp(36px, 6vw, 85px);
+    }
+}
+@media screen and (max-width: 599px) {
+    .wrapper {
+        padding: 0px;
+    }
+    .contact__container {
+        margin-top: 100px;
+    }
+    .contact__container .contact__wrapper {
+        display: block;
+    }
+    .contact__container .contact__wrapper .contact__title {
+        margin-bottom: 10px;
+    }
+    .contact__title .ja {
+        font-size: 15px;
+    }
+    .contact__title .en {
+        font-size: 23px;
+    }
+}
+@media screen and (max-width: 555px) {
+    .hero__container .hero__h1 {
+        font-size: clamp(26px, 6vw, 85px);
+    }
 }
