@@ -416,6 +416,9 @@ section {
     }
 }
 @media screen and (max-width: 959px) {
+    main {
+        padding: 10px 30px;
+    }
     .footer__container .footer__nav {
         flex-direction: column;
         margin-bottom: 30px;
@@ -433,10 +436,16 @@ section {
         width: 80px;
         height: 80px;
     }
+    .header__container {
+        padding: 0 20px;
+    }
 }
 @media screen and (max-width: 900px) {
     .worries__list {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .production__container .production__wrapper .production__item {
+        width: 100%;
     }
 }
 @media screen and (max-width: 860px) {
@@ -462,6 +471,30 @@ section {
     }
     .contact__title .en {
         font-size: 23px;
+    }
+    .production__container .production__wrapper {
+        grid-template-columns: auto;
+    }
+    .worries__title {
+        font-size: 25px;
+    }
+    .section__title .ja {
+        font-size: 17px;
+    }
+    .section__title .en {
+        font-size: 33px;
+    }
+    .skill__container {
+        margin-bottom: 80px;
+    }
+    .worries__container {
+        margin-bottom: 80px;
+    }
+    .production__container {
+        margin-bottom: 80px;
+    }
+    .hero__container {
+        margin-bottom: 80px;
     }
 }
 @media screen and (max-width: 555px) {
